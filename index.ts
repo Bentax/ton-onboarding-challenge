@@ -78,7 +78,7 @@ async function main () {
     bounceable: true,
   })
   // we must convert TON to nanoTON
-  const amountToSend = toNano('0.01').toString()
+  const amountToSend = toNano('0.02').toString()
  // BOC means Bag Of Cells here
   const preparedBodyCell = msg.toBoc().toString('base64url')
 
