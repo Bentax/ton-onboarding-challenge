@@ -10,7 +10,7 @@ const qrcode = require('qrcode-terminal');
 async function main () {
 
   const wallet = Address.parse('UQCtHfG145JnLXzOYyf4YJSxsoF3XNEuF3klsnYyEEVuYgqG');
-  const collection = Address.parse('EQAG2BH0JlmFkbMrLEnyn2bIITaOSssd4WdisE4BdFMkZbir');
+  const collection = Address.parse('EQDk8N7xM5D669LC2YACrseBJtDyFqwtSPCNhRWXU7kjEptX');
 
   // get the decentralized RPC endpoint in Testnet
   const endpoint = await getHttpEndpoint();
