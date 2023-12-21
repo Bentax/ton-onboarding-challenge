@@ -9,12 +9,12 @@ const qrcode = require('qrcode-terminal');
 
 async function main () {
 
-  const wallet = Address.parse('0QBqASax75JOWlfKz8aNuHnNtEld2RD8PE0t5ToZR0R_cVUt');
-  const collection = Address.parse('EQDk8N7xM5D669LC2YACrseBJtDyFqwtSPCNhRWXU7kjEptX');
+  const wallet = Address.parse('UQCtHfG145JnLXzOYyf4YJSxsoF3XNEuF3klsnYyEEVuYgqG');
+  const collection = Address.parse('EQAG2BH0JlmFkbMrLEnyn2bIITaOSssd4WdisE4BdFMkZbir');
 
   // get the decentralized RPC endpoint in Testnet
   const endpoint = await getHttpEndpoint({
-    network: "testnet",
+    network: "mainnet",
   });
 
   // initialize ton library
@@ -80,7 +80,7 @@ async function main () {
     bounceable: true,
   })
   // we must convert TON to nanoTON
-  const amountToSend = toNano('0.05').toString()
+  const amountToSend = toNano('0.01').toString()
  // BOC means Bag Of Cells here
   const preparedBodyCell = msg.toBoc().toString('base64url')
 
