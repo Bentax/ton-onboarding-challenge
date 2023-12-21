@@ -13,9 +13,7 @@ async function main () {
   const collection = Address.parse('EQAG2BH0JlmFkbMrLEnyn2bIITaOSssd4WdisE4BdFMkZbir');
 
   // get the decentralized RPC endpoint in Testnet
-  const endpoint = await getHttpEndpoint({
-    network: "mainnet",
-  });
+  const endpoint = await getHttpEndpoint();
 
   // initialize ton library
   const client = new TonClient({ endpoint });
